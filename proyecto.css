@@ -1,0 +1,1044 @@
+/* Reset básico */  
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: 'Arial', sans-serif;  
+    background-color: #85d2f6;  
+}  
+
+/* Barra de navegación */  
+header {  
+    background-color: #1A237E;  
+    padding: 10px 20px;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}  
+
+.logo img {  
+    width: 80px;  
+}  
+
+nav {  
+    display: flex;  
+    align-items: center;  
+}  
+
+nav ul {  
+    list-style: none;  
+    display: flex;  
+    gap: 40px;  
+}  
+
+nav ul li a {  
+    color: #fff;  
+    text-decoration: none;  
+    font-size: 16px;  
+}  
+
+nav .buttons {  
+    display: flex;  
+    gap: 10px;  
+    margin-left: 20px; /* Espacio entre el menú y los botones */  
+}  
+
+nav .btn {  
+    background-color: #ffffff;  
+    padding: 10px 20px;  
+    border-radius: 5px;}
+
+/* Sección principal */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #1A237E, #03A9F4);
+    color: #d9ff00;
+    gap: 20px;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.hero-content h1, .hero-content h2 {
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    background-color: #ffffff;
+    color: #4c53a8;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hero-content p:hover {
+    transform: scale(1.05);
+}
+
+.hero-content .discover {
+    background-color: #f2ff00;
+    color: #1A237E;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .discover:hover {
+    background-color: #ffff00;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Sección secundaria */
+.hero-secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #E1F5FE;
+    gap: 20px;
+}
+
+.hero-secondary .hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.hero-secondary .hero-content {
+    max-width: 50%;
+}
+
+.hero-secondary p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Slider */
+.menu-slider-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.menu-slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.menu-item {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Flechas del slider */
+.prev, .next {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #1A237E;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.payment-methods h4 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.payment-icons img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-logo-contact img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links h5 {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: rigth;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    text-align: right;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+/*********************************ACERCA DE NOSOTROS*******************************************/
+
+/* Estilo para la sección "Sobre Nosotros" */
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f7f9fc;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b3d91;
+    padding: 20px;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header .buttons .btn {
+    background-color: #1a73e8;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+header .buttons .btn.register {
+    background-color: #ff6347;
+}
+
+/* Sección 'Sobre Nosotros' */
+.about {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #063380;
+}
+
+.about h2{
+
+    color: #3c57f1;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #162b9d;
+}
+
+/* Sección Intro para el texto alineado correctamente */
+.mission-vision.intro {
+    text-align: center;
+    background-color: #e9eff5;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.mission-vision.intro h2 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.mission-vision.intro p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px; /* Espacio entre el título y el párrafo */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Misión y visión */
+.mission-vision {
+    text-align: center;
+    padding: 50px;
+    background-color: #e9eff5;
+}
+
+.mission-vision h2 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.mission-vision p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Sección combinación perfecta */
+.combination-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.combination-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1a73e8;
+}
+
+.combination-section .combination-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.combination-section .left-column, 
+.combination-section .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.combination-section .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.combination-section .icon {
+    font-size: 1.5rem;
+    color: #1a73e8;
+}
+
+.combination-section p {
+    font-size: 1rem;
+    text-align: left;
+}
+/* Misión y Visión: Mejora estética */
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #e9eff5;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.mission-vision .text {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.mission-vision .text h2 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    margin-bottom: 20px;
+}
+
+.mission-vision .text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.mission-vision .image {
+    flex: 1;
+    text-align: center;
+}
+
+.mission-vision .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.mission-vision .image img:hover {
+    transform: scale(1.05);
+}
+/**************************************inicio de secion****************************/
+/* Estilo general */
+body {
+    background-color: #1a73e8; /* Color de fondo azul */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Contenedor del formulario de inicio de sesión */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Caja del formulario */
+.login-box {
+    display: flex;
+    background-color: #fff; /* Fondo blanco para el formulario */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 800px;
+}
+
+/* Formulario */
+.login-form {
+    padding: 40px;
+    flex: 1; /* Toma el espacio restante */
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    color: #1a73e8; /* Color azul para el título */
+}
+
+.login-form label {
+    margin-top: 20px;
+    display: block;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón */
+.btn {
+    background-color: #1a73e8; /* Color azul para el botón */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Estilo de la imagen */
+.login-img {
+    flex: 1; /* Toma el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-img img {
+    max-width: 100%; /* Imagen responsiva */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+
+/**********************************Registro de usuario********************/
+
+body {
+    background-color: #1a73e8; /* Fondo azul */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+}
+
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.register-box {
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Ancho fijo para el formulario */
+    position: relative; /* Para posicionar la imagen */
+}
+
+.register-img {
+    text-align: center; /* Centra la imagen */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.register-img img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.register-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a73e8; /* Color de texto */
+}
+
+.register-form label {
+    margin-top: 15px;
+    display: block;
+    color: #333;
+    font-weight: bold; /* Texto en negrita para los labels */
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s; /* Efecto de transición para el borde */
+}
+
+.register-form input:focus {
+    border-color: #1a73e8; /* Color del borde al enfocar */
+}
+
+.register-form .btn {
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: #e5ff00; /* Color del texto del botón */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%; /* Botón ocupa todo el ancho */
+    transition: background-color 0.3s; /* Efecto de transición para el botón */
+}
+
+.register-form .btn:hover {
+    background-color: #ffffff; /* Color más oscuro al pasar el mouse */
+}
+
+.register-form p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-form a {
+    color: #ffffff; /* Color del enlace */
+}
+/*********************************************planes**************************************/
+
+/* Estilos para la barra de navegación */
+
+
+/* Estilos generales para la sección de planes */
+.plans-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Estilos para el título */
+.plans-section h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Estilos para las pestañas */
+.tabs {
+    display: flex;
+    justify-content: center; /* Centra las pestañas */
+    gap: 10px; /* Espacio entre las pestañas */
+    margin-bottom: 10px; /* Espacio debajo de las pestañas */
+}
+
+.tab {
+    background-color: transparent; /* Fondo transparente para las pestañas */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno de las pestañas */
+    color: #ffff00; /* Color del texto */
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre las pestañas */
+    transition: color 0.3s; /* Transición suave para el color del texto */
+}
+
+.tab:hover {
+    color: #ffffff; /* Color al pasar el ratón */
+}
+
+.tab.active {
+    border-bottom: 2px solid #0d47a1; /* Línea inferior para la pestaña activa */
+    color: #ffffff; /* Color del texto de la pestaña activa */
+}
+
+/* Estilos para el mensaje informativo */
+.info-message {
+    color: #000000; /* Color del mensaje */
+    font-size: 14px;
+}
+
+/* Estilos para la sección de precios */
+.pricing-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Estilo para el título de la sección de precios */
+.pricing-section h1 {
+    font-size: 2rem;
+    color: #003366;
+}
+
+/* Contenedor de planes */
+.plan-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los planes se ajusten en pantallas más pequeñas */
+}
+
+/* Estilos para cada tarjeta de plan */
+.plan-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%; /* Ancho de cada tarjeta */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre las tarjetas */
+.plan-card:hover {
+    transform: translateY(-5px); /* Elevación al pasar el mouse */
+}
+
+/* Estilo del encabezado de cada tarjeta */
+.plan-header {
+    margin-bottom: 15px;
+}
+
+/* Estilo para el botón de cotización */
+.btn-quote {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-quote:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para la barra de navegación */
+
+
+/***************************************/
+
+/* Pricing Section */
+.pricing-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.pricing-section h1 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #1e90ff;
+}
+
+.plan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* Ajusta el ancho para 3 tarjetas por fila */
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+}
+
+.plan-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.plan-header p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.plan-header h3 {
+    font-size: 28px;
+    color: #ff7f50;
+    margin-bottom: 20px;
+}
+
+.plan-card ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.plan-card ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #555;
+}
+
+.plan-card .btn-quote, .plan-card .btn-details {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.plan-card .btn-quote:hover, .plan-card .btn-details:hover {
+    background-color: #ff7f50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plan-card {
+        width: 100%; /* Ajuste para dispositivos más pequeños */
+    }}
+
+
+    .h2_title {
+        color: white;
+    }
+/*************************************contactanos*****************************************/
+
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #105998;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contact-info strong {
+    color: #105998;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #105998;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.submit-btn {
+    padding: 15px;
+    background-color: #105998;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #105998;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.disclaimer a {
+    color: #105998;
+    text-decoration: none;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .form-group {
+        flex-direction: column;
+    }
+}
+
+
+/**************************cotizar****************************/
+
+
+
+/* Formulario de cotización */
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFB500;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    color: white;
+    background-color: #FFB500;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #FF9000;
+}
+
+/* Sección principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Formulario de cotización */
+.quote-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.quote-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0B4DA1;
+}
+
+.quote-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.quote-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.quote-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.quote-btn {
+    background-color: #FFB500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.quote-btn:hover {
+    background-color: #FF9000;
+}
+
+/* Sección de imagen */
+.image-section {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.main-image {
+    max-width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
